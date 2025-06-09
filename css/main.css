@@ -1,0 +1,67 @@
+#mainVisual {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+}
+#mainVisual .mainBanner {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+}
+#mainVisual .mainBanner li {
+    width: 100%;
+    height: 1080px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+#mainVisual .mainBanner li:nth-child(1) {
+    left: 0;
+    background-image: url(../images/main01_pc.jpg);
+}
+#mainVisual .mainBanner li:nth-child(2) {
+    background-image: url(../images/main02_pc.jpg);
+}
+#mainVisual .mainBanner li:nth-child(3) {
+    background-image: url(../images/main03_pc.jpg);
+}
+#mainVisual .mainBanner li:nth-child(4) {
+    background-image: url(../images/main04_pc.jpg);
+}
+#mainVisual .mainBanner li .inner {
+    width: 1160px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* li에 flex하고 align-item center해도 같음
+        위치를 잡아놨기때문에 */
+}
+#mainVisual .mainBanner li h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+#mainVisual .mainBanner li h2 span {
+}
+#mainVisual .mainBanner li h2 + p {
+}
+#mainVisual .mainBanner li h2 + p span {
+}
+#mainVisual .mainBanner li .more {
+}
+#mainVisual .mainBanner li .more a {
+}
+#mainVisual .btn {
+}
+#mainVisual .btn i {
+}
+#mainVisual .prev {
+}
+#mainVisual .next {
+}
+#mainVisual .mouse {
+}
