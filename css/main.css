@@ -1,0 +1,323 @@
+#mainVisual {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+}
+#mainVisual .mainBanner {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+}
+#mainVisual .mainBanner li {
+    width: 100%;
+    height: 1080px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+#mainVisual .mainBanner li:nth-child(1) {
+    left: 0;
+    background-image: url(../images/main01_pc.jpg);
+}
+#mainVisual .mainBanner li:nth-child(2) {
+    background-image: url(../images/main02_pc.jpg);
+}
+#mainVisual .mainBanner li:nth-child(3) {
+    background-image: url(../images/main03_pc.jpg);
+}
+#mainVisual .mainBanner li:nth-child(4) {
+    background-image: url(../images/main04_pc.jpg);
+}
+#mainVisual .mainBanner li .inner {
+    width: 1160px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* li에 flex하고 align-item center해도 같음
+        위치를 잡아놨기때문에 */
+}
+#mainVisual .mainBanner li h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+#mainVisual .mainBanner li h2 span {
+}
+#mainVisual .mainBanner li h2 + p {
+}
+#mainVisual .mainBanner li h2 + p span {
+}
+#mainVisual .mainBanner li .more {
+}
+#mainVisual .mainBanner li .more a {
+}
+#mainVisual .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    border: 3px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+}
+#mainVisual .btn i {
+    font-size: 30px;
+    color: #fff0ff;
+    font-weight: 600;
+}
+#mainVisual .prev {
+    left: 100px;
+}
+#mainVisual .next {
+    right: 100px;
+}
+#mainVisual .mouse {
+}
+
+.main {
+}
+.main h2 {
+    font-size: 43px;
+}
+
+.main .con1 .inner,
+.main .con2 .inner {
+    padding: 120px 0;
+}
+.main .con1 .more,
+.main .con2 .more {
+    text-align: center;
+}
+
+.main .con1 .more a,
+.main .con2 .more a {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #222;
+    color: #222;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.main .con2 .more a::before,
+.main .con1 .more a::before {
+    content: '';
+    display: block;
+    width: 220px;
+    height: 70px;
+    background: orange;
+    position: absolute;
+    top: -10px;
+    left: -230px;
+    transition: 0.5s;
+    transform: skewX(-35deg);
+    z-index: 10;
+}
+.main .con2 .more a:hover:before,
+.main .con1 .more a:hover:before {
+    left: -10px;
+}
+.main .con2 .more a span,
+.main .con1 .more a span {
+    position: relative;
+    z-index: 20;
+}
+.main .con2 .more a:hover span,
+.main .con1 .more a:hover span {
+    color: #ffffff;
+    font-weight: 600;
+}
+.main .con2 .more a:hover,
+.main .con1 .more a:hover {
+    border: 1px solid orange;
+}
+/* 그룹선택자 */
+
+.main .con3 .more a::before,
+.main .con4 .more a::before {
+    content: '';
+    display: block;
+    width: 220px;
+    height: 70px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: -10px;
+    left: -230px;
+    transition: 0.5s;
+    transform: skewX(-35deg);
+    z-index: 10;
+}
+.main .con3 .more a:hover:before,
+.main .con4 .more a:hover:before {
+    left: -10px;
+}
+.main .con3 .more a:hover span,
+.main .con4 .more a:hover span {
+    color: #222;
+    font-weight: 600;
+}
+.main .con3 .more a:hover,
+.main .con4 .more a:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+.main .con3 .more a,
+.main .con4 .more a {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main .con1 {
+}
+.main .con1 h2 {
+    text-align: center;
+    margin-bottom: 6px;
+}
+.main .con1 h2 + p {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.main .con1 ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.main .con1 ul li {
+    width: 270px;
+}
+.main .con1 ul li h3 {
+    font-size: 20px;
+}
+.main .con1 ul li h3 + span {
+}
+.main .con1 ul li p {
+}
+.main .con1 ul li a {
+}
+.main .con1 ul li a div {
+    width: 270px;
+    height: 365px;
+    overflow: hidden;
+}
+.main .con1 ul li a div img {
+    width: 100%;
+    transition: 0.8s ease-in-out;
+}
+.main .con1 ul li a div img:hover {
+    transform: scale(1.2);
+}
+.main .con1 ul li a h3 {
+    margin: 15px 0;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+.main .con1 ul li a h3 span {
+    display: block;
+}
+.main .con1 ul li a p {
+    word-break: keep-all;
+}
+.main .con2 {
+    position: relative;
+}
+.main .con2::after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    background: #f5f5f5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* con2 배경이미지나 색이 없을경우에 가능 */
+    z-index: -10;
+    /* -는 지하로 */
+}
+.main .con2 h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main .con2 ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.main .con2 ul li {
+    width: 580px;
+}
+.main .con2 ul li a {
+    width: 580px;
+    height: 547px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.main .con2 ul li a > img {
+    transition: 0.8s ease-in-out;
+}
+.main .con2 ul li a:hover > img {
+    transform: scale(1.1);
+}
+.main .con2 ul li a .txt {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.main .con2 ul li a .txt strong {
+    font-size: 28px;
+}
+
+.main .con2 ul li a .txt h3 {
+    margin-bottom: 35px;
+    font-size: 43px;
+}
+
+.main .con2 ul li a + p {
+    margin: 25px 0px;
+    text-align: center;
+    font-size: 17px;
+    color: #676767;
+}
+/* //main con2  */
+.main .con3 {
+    position: relative;
+}
+.main .con3::after {
+    content: '';
+    width: 40%;
+    display: block;
+    height: 100%;
+    background: #2561d1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* con2 배경이미지나 색이 없을경우에 가능 */
+    z-index: -15;
+    /* -는 지하로 */
+}
+.main .con3 ul {
+}
