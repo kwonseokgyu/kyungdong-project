@@ -87,17 +87,15 @@
     font-size: 43px;
 }
 
-.main .con1 .inner,
-.main .con2 .inner {
+.main .content1 .inner {
     padding: 120px 0;
 }
-.main .con1 .more,
-.main .con2 .more {
+
+.main .content1 .more {
     text-align: center;
 }
 
-.main .con1 .more a,
-.main .con2 .more a {
+.main .content1 .more a {
     display: inline-block;
     width: 180px;
     height: 50px;
@@ -110,8 +108,8 @@
     position: relative;
     overflow: hidden;
 }
-.main .con2 .more a::before,
-.main .con1 .more a::before {
+
+.main .content1 .more a::before {
     content: '';
     display: block;
     width: 220px;
@@ -124,28 +122,27 @@
     transform: skewX(-35deg);
     z-index: 10;
 }
-.main .con2 .more a:hover:before,
-.main .con1 .more a:hover:before {
+
+.main .content1 a:hover:before {
     left: -10px;
 }
-.main .con2 .more a span,
-.main .con1 .more a span {
+
+.main .content1 .more a span {
     position: relative;
-    z-index: 20;
+    z-index: 25;
 }
-.main .con2 .more a:hover span,
-.main .con1 .more a:hover span {
+
+.main .content1 .more a:hover span {
     color: #ffffff;
     font-weight: 600;
 }
-.main .con2 .more a:hover,
-.main .con1 .more a:hover {
+
+.main .content1 .more a:hover {
     border: 1px solid orange;
 }
 /* 그룹선택자 */
 
-.main .con3 .more a::before,
-.main .con4 .more a::before {
+.main .content2 .more a::before {
     content: '';
     display: block;
     width: 220px;
@@ -156,23 +153,23 @@
     left: -230px;
     transition: 0.5s;
     transform: skewX(-35deg);
-    z-index: 10;
+    z-index: 0;
 }
-.main .con3 .more a:hover:before,
-.main .con4 .more a:hover:before {
+
+.main .content2 .more a:hover:before {
     left: -10px;
 }
-.main .con3 .more a:hover span,
-.main .con4 .more a:hover span {
+
+.main .content2 .more a:hover span {
     color: #222;
     font-weight: 600;
 }
-.main .con3 .more a:hover,
-.main .con4 .more a:hover {
+
+.main .content2.more a:hover {
     border: 1px solid rgb(255, 255, 255);
 }
-.main .con3 .more a,
-.main .con4 .more a {
+
+.main .content2 .more a {
     display: inline-block;
     width: 180px;
     height: 50px;
@@ -184,8 +181,12 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+    z-index: 10;
 }
-
+.main .content2 .more a span {
+    color: #ffffff;
+    font-weight: 600;
+}
 .main .con1 {
 }
 .main .con1 h2 {
@@ -308,16 +309,230 @@
 }
 .main .con3::after {
     content: '';
-    width: 40%;
+    width: 44%;
     display: block;
     height: 100%;
-    background: #2561d1;
+    background: linear-gradient(to right, #07255d, #2c3e50);
+
     position: absolute;
     left: 0;
     top: 0;
     /* con2 배경이미지나 색이 없을경우에 가능 */
-    z-index: -15;
+    z-index: -10;
     /* -는 지하로 */
 }
+.main .con3 .inner {
+    height: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+}
+.main .con3 .public {
+    width: 450px;
+    color: white;
+}
+
+.main .con3 .public strong {
+    font-size: 25px;
+    font-weight: 100;
+}
+.main .con3 .public h2 {
+    margin-bottom: 30px;
+}
+.main .con3 .public h2 + p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
 .main .con3 ul {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main .con3 ul li {
+    margin-bottom: 35px;
+}
+.main .con3 ul li a {
+}
+.main .con3 ul li a div {
+    width: 275px;
+    height: 180px;
+    overflow: hidden;
+}
+.main .con3 ul li a img {
+    width: 275px;
+    height: 180px;
+    transition: 0.5s;
+}
+.main .con3 ul li a:hover img {
+    transform: scale(1.1);
+}
+.main .con3 ul li strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+.main .con4 {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../images/main_foot_bg.jpg);
+}
+.main .con4 .inner {
+    height: 480px;
+    width: 1160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .con4 .about {
+    color: white;
+}
+.main .con4 .about h2 {
+    font-size: 43px;
+    font-weight: 600;
+}
+.main .con4 .about h2 span {
+    display: block;
+    font-size: 43px;
+    font-weight: 100;
+    margin-bottom: 35px;
+}
+.main .con4 .about h2 + p {
+    margin: 30px 0;
+}
+.main .con4 ul {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.main .con4 ul li {
+}
+.main .con4 ul li:nth-child(1) a {
+    background: rgb(250, 150, 77, 0.4);
+}
+.main .con4 ul li:nth-child(2) a {
+    background: rgb(154, 178, 255, 0.4);
+}
+.main .con4 ul li:nth-child(3) a {
+    background: rgb(53, 126, 255, 0.4);
+}
+.main .con4 ul li a {
+    display: block;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .con4 ul li span {
+    display: block;
+    width: 55px;
+    height: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.main .con4 ul li span img {
+}
+.main .con4 ul li a strong {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+.main .con4 ul li a em {
+    font-size: 19px;
+    color: white;
+    opacity: 0.8;
+}
+
+.memu {
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+.memu li {
+    margin-bottom: 20px;
+    position: relative;
+}
+.memu li::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-30%, -50%);
+    z-index: 1;
+}
+.memu li::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-40%, -50%);
+    z-index: 1;
+}
+.memu li.on::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #adb3ff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-30%, -50%);
+    z-index: 1;
+}
+.memu li.on::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ffabab;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-40%, -50%);
+    z-index: 1;
+}
+.memu li:last-child {
+    margin-bottom: 0;
+}
+.memu li a {
+    display: block;
+    padding-left: 20px;
+    color: white;
+    opacity: 0.7;
+}
+.memu li.on a {
+    opacity: 1;
+}
+.memu ul::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 90%;
+    background: #858585;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }

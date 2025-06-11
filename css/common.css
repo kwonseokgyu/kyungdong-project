@@ -79,10 +79,52 @@
 #header .nav .gnb > li ul {
     display: none;
 }
+#footer {
+    background: #131313;
+}
+#footer .inner {
+    width: 1160px;
+    padding: 50px 0;
 
+    color: white;
+}
+#footer p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.top {
+    position: fixed;
+    right: 15%;
+    bottom: 30px;
+}
 .bg {
     display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    opacity: 0.6;
 }
 .sitemap {
     display: none;
+    position: fixed;
+    width: 960px;
+    height: 530px;
+    background: #ffffff;
+    left: 50%;
+    top: 50%;
+    z-index: 10080;
+    transform: translate(-50%, -50%);
+}
+.sitemap .close {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+}
+.sitemap .close i {
+    font-size: 25px;
+    cursor: pointer;
 }
